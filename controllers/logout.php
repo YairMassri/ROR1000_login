@@ -6,5 +6,5 @@
     unset($_SESSION['class']);
     session_destroy();
     // redirect to login
-    header('Location: login.php');
+    header('Location: ../login.php');
 ?>
