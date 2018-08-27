@@ -1,4 +1,6 @@
-<?php $page = ucfirst(str_replace('.php', '', basename($_SERVER['PHP_SELF']))); ?>
+<?php $page = ucfirst(str_replace('.php', '', basename($_SERVER['PHP_SELF'])));
+if(isset($_SESSION['email'])){$email = $_SESSION['email'];}
+ ?>
 
 <!DOCTYPE html>
 <html>
@@ -8,9 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?=$page?></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+div.img{
+    border: 1px solid #ccc;
+    width: 10px;
+    height: 10px;
+}
+</style>
 </head>
 <body>
-    <?php if($page != "Login") { ?>
+    <?php if($page != "Login" && $page != "Signup") { ?>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">My Project</a>
 

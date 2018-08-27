@@ -27,4 +27,6 @@ $error = isset($_GET['error']);
     </div>
 </form>
 
+<div class="padtop">Not a member? <a href="signup.php">Sign Up</a></div>
+
 <?php include "includes/footer.php"; ?>

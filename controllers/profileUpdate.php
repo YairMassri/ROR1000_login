@@ -1,6 +1,7 @@
 <?php
 
     // get values from the url
+    
     $name = $_POST['name'];
     $email = $_POST['email'];
     $class = $_POST['class'];
