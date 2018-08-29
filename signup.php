@@ -22,7 +22,7 @@
                 <input name="confirmpass" type="password" placeholder="Confirm Password">
             </div>
 
-            <input type="submit"value="Sign Up" />
+            <input type="submit" value="Sign Up" />
         </form>
         <div>Have account? <a href="login.php">Log In</a></div>
     </div>
